@@ -3,23 +3,26 @@ CrackingTheCodingInterview
 
 My solutions to interview questions in Cracking the Coding Interview.
 
-Chapter 1:  Arrays and Strings  
-Chapter 2:  Linked Lists  
-Chapter 3:  Stacks and Queues  
-Chapter 4:  Trees and Graphs  
-Chapter 5:  Bit Manipulation  
-Chapter 6:  Brain Teasers  
-Chapter 7:  Object Oriented Design  
-Chapter 8:  Recursion  
-Chapter 9:  Sorting and Searching  
-Chapter 10: Mathematical  
-Chapter 11: Testing  
-Chapter 12: System Design and Memory Limits  
-Chapter 13: C++  
-Chapter 14: Java  
-Chapter 15: Databases  
-Chapter 16: Low Level  
-Chapter 17: Networking  
-Chapter 18: Threads and Locks  
-Chapter 19: Moderate  
-Chapter 20: Hard  
+__Chapters__
+<ol>
+<li>Arrays and Strings</li>
+<li>Linked Lists</li>
+<li>Stacks and Queues</li>  
+<li>Trees and Graphs</li>
+<li>Bit Manipulation</li>
+<li>Brain Teasers</li>
+<li>Object Oriented Design</li>
+<li>Recursion</li>
+<li>Sorting and Searching</li>
+<li>Mathematical</li>
+<li>Testing</li>
+<li>System Design and Memory Limits</li>
+<li>C++</li>
+<li>Java</li>
+<li>Databases</li>
+<li>Low Level</li>
+<li>Networking</li>
+<li>Threads and Locks</li>
+<li>Moderate</li>
+<li>Hard</li>
+</ol>
