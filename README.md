@@ -1,4 +1,4 @@
-Cracking The Coding Interview
+Cracking the Coding Interview
 ==========================
 
 My solutions to interview questions in Cracking the Coding Interview.
