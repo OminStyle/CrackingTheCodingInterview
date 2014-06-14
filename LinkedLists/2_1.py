@@ -18,16 +18,27 @@ class Node:
         n.next = Node(d)
 
     @staticmethod
-    def removeDuplicates(root):
+    def removeDuplicates(head):
         uniqueData = dict()
-        uniqueData[root.data] = True
-        node = root
+        uniqueData[head.data] = True
+        node = head
         while node.next is not None:
             if node.next.data in uniqueData:
                 node.next = node.next.next
             else:
                 uniqueData[node.next.data] = True
                 node = node.next
+
+    @staticmethod
+    def removeDuplicates1(head):
+        while head.next is not None:
+            runner = head
+            while runner.next is not None:
+                if head.data == runner.next.data:
+                    runner.next = runner.next.next
+                else:
+                    runner = runner.next
+            head = head.next
 
 
 class removeDuplicatesTest(unittest.TestCase):
@@ -41,6 +52,24 @@ class removeDuplicatesTest(unittest.TestCase):
         node.appendToTail(2)
         node.appendToTail(1)
         Node.removeDuplicates(node)
+        self.assertEquals(1, node.data)
+        node = node.next
+        self.assertEquals(2, node.data)
+        node = node.next
+        self.assertEquals(3, node.data)
+        node = node.next
+        self.assertEquals(None, node)
+
+    def testTwo(self):
+        node = Node(1)
+        node.appendToTail(2)
+        node.appendToTail(2)
+        node.appendToTail(2)
+        node.appendToTail(2)
+        node.appendToTail(3)
+        node.appendToTail(2)
+        node.appendToTail(1)
+        Node.removeDuplicates1(node)
         self.assertEquals(1, node.data)
         node = node.next
         self.assertEquals(2, node.data)
