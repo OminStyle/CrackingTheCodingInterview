@@ -2,7 +2,7 @@ import unittest
 from node import Node
 
 
-class Stack:
+class Stack(object):
     def __init__(self):
         self.top = None
 
@@ -15,9 +15,11 @@ class Stack:
 
     def push(self, item):
         t = Node(item)
-        if self.top is not None:
-            t.next = self.top
+        t.next = self.top
         self.top = t
+
+    def peek(self):
+        return self.top
 
 
 class StackTest(unittest.TestCase):
